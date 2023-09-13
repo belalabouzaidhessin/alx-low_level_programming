@@ -1,19 +1,28 @@
-#include <limits.h>
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_sign - Prints the sign of a number.
+ * @n: The number of which the sign will be printed.
  *
- * Return: Always 0.
+ * Return: 1 if the number is greater than zero,
+ *         0 if the number is zero,
+ *         -1 if the number is less than zero.
  */
-int main(void)
+int print_sign(int n)
 {
-	int r;
-
-	r = print_sign(98);
-	if (r < 0)
-		r *= -1;
-	_putchar(r + '0');
-	_putchar('\n');
-	return (0);
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }
