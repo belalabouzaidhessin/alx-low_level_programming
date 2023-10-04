@@ -1,54 +1,27 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-
-char *create_array(unsigned int, char);
-
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * create_array - creates an array of chars.
+ * @size: size of the array.
+ * @c: storaged char
  *
- * Return: Nothing.
+ * Return: pointer of an array of chars
  */
-void simple_print_buffer(char *buffer, unsigned int size)
+char *create_array(unsigned int size, char c)
 {
+	char *cr;
 	unsigned int i;
 
-	i = 0;
-	while (i < size)
-	{
-		if (i % 10)
-		{
-			printf(" ");
-		}
-		if (!(i % 10) && i)
-		{
-			printf("\n");
-		}
-		printf("0x%02x", buffer[i]);
-		i++;
-	}
-	printf("\n");
-}
+	if (size == 0)
+		return (NULL);
 
-/**
- * main - check the code .
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	char *buffer;
-	unsigned int size;
+	cr = malloc(sizeof(c) * size);
 
-	size = 72;
-	buffer = create_array(size, 'S');
-	if (buffer == NULL)
-	{
-		printf("failed to allocate memory\n");
-		return (1);
-	}
-	simple_print_buffer(buffer, size);
-	free(buffer);
-	return (0);
+	if (cr == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		cr[i] = c;
+
+	return (cr);
 }
