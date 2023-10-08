@@ -16,3 +16,4 @@ if (ptr == NULL)
 exite(98);
 
 return (ptr);
+}
