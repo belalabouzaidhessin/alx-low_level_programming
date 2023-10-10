@@ -1,12 +1,10 @@
 #include <stdio.h>
-#define file hello
-/**
- * main - prints the name of the file
- *
- * Return: Always 0 (Success)
- */
+
+#define file "hello"
+
 int main(void)
 {
-	printf("file\n");
-	return (0);
+    printf("%s\n", file);
+    return 0;
 }
+
