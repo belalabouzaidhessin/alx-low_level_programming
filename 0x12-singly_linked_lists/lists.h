@@ -1,5 +1,5 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LISTS_H
+#define LISTS_H
 
 
 /**
@@ -8,8 +8,8 @@
  * @len: length of the string
  * @next: points to the next node
  *
- * Return: the number of nodes
  * Description: singly linked list node structure
+ * for Holberton project
  */
 typedef struct list_s
 {
