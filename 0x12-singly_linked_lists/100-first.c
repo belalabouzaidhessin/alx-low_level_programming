@@ -1,16 +1,16 @@
 #include<stdio.h>
 
 /**
- * myStartupFun - Apply the constructor attribute to myStartupFun() so that it.
+ * Funny code - Apply the constructor attribute to Funny code ()
  *   is executed before main().
  */
-void The Hare and the Tortoise(void) __attribute__ ((constructor));
+void Funny code(void) __attribute__ ((constructor));
 
 /**
- * myStartupFun - implementation of myStartupFun.
+ * Funny code - implementation of Funny code.
  *
  */
-void main The Hare and the Tortoise(void)
+void Funny code(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
