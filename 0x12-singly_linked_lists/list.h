@@ -1,10 +1,15 @@
 #ifndef BELAL_H
-#define BOLA_H
+#define BELAL_H
 
 
 /**
  * struct list_s - singly linked list
- * @str: string - (malloc'ed string).
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Return: the number of nodes
+ * Description: singly linked list node structure
  */
 typedef struct list_s
 {
